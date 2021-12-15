@@ -99,7 +99,8 @@ class TvDatafeed:
 
         import chromedriver_autoinstaller
 
-        path = chromedriver_autoinstaller.install(cwd=True)
+        #path = chromedriver_autoinstaller.install(cwd=True)
+        path = chromedriver_autoinstaller.install()
 
         if path is not None:
             self.chromedriver_path = os.path.join(
